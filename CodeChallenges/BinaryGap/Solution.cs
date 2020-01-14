@@ -19,13 +19,5 @@ namespace CodeChallenges.BinaryGap
             Array.Sort(gaps, (x, y) => x.Length.CompareTo(y.Length));
             return gaps.Last().Length;
         }
-
-        private static BitArray GetSequence(int N)
-        {
-            var bytes = BitConverter.GetBytes(N);
-            Array.Reverse(bytes);
-            var bits = new BitArray(bytes);
-            return bits;
-        }
     }
 }

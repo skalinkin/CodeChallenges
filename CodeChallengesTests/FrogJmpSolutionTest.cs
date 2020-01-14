@@ -19,7 +19,6 @@ namespace CodeChallengesTests
         [TestCase(int.MinValue,int.MaxValue,1, 100)]
         public void AsserThatSolutionReturnsMinimalNumberOfJumpsFromXtoYinScopeOfTimeout(int X, int Y, int D, int timeout)
         {
-            
             var target = new CodeChallenges.FrogJmp.Solution();
             System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
             timer.Start();
