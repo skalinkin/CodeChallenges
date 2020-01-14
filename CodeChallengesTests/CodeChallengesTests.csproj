@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BinaryGapSolutionTest.cs" />
     <Compile Include="CyclicRotationSolutionTest.cs" />
+    <Compile Include="FrogJmpSolutionTest.cs" />
     <Compile Include="OddOccurrencesInArrayTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
