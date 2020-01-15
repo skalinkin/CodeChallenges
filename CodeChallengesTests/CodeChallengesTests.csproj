@@ -52,6 +52,7 @@
     <Compile Include="FrogJmpSolutionTest.cs" />
     <Compile Include="FrogRiverOneSolutionTest.cs" />
     <Compile Include="OddOccurrencesInArrayTest.cs" />
+    <Compile Include="PermCheckSolutionTest.cs" />
     <Compile Include="PermMissingElemSolutionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TapeEquilibriumSolutionTest.cs" />
