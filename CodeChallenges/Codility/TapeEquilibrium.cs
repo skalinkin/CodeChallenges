@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace CodeChallenges.TapeEquilibrium
+namespace CodeChallenges.Codility
 {
-    public class Solution
+    public class TapeEquilibrium
     {
         public int solution(int[] A)
         {

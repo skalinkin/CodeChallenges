@@ -1,6 +1,6 @@
-﻿namespace CodeChallenges.CyclicRotation
+﻿namespace CodeChallenges.Codility
 {
-    public class Solution
+    public class CyclicRotation
     {
         public int[] solution(int[] A, int K)
         {

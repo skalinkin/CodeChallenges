@@ -1,4 +1,5 @@
 ﻿using System;
+using CodeChallenges.Codility;
 using NUnit.Framework;
 
 namespace CodeChallengesTests
@@ -11,7 +12,7 @@ namespace CodeChallengesTests
         [TestCase(25,85,30,2)]
         public void AsserThatSolutionReturnsMinimalNumberOfJumpsFromXtoY(int X, int Y, int D, int expected)
         {
-            var target = new CodeChallenges.FrogJmp.Solution();
+            var target = new FrogJmp();
             var actual = target.solution(X, Y, D);
             Assert.AreEqual(expected,actual);
         }
@@ -19,7 +20,7 @@ namespace CodeChallengesTests
         [TestCase(int.MinValue,int.MaxValue,1, 100)]
         public void AsserThatSolutionReturnsMinimalNumberOfJumpsFromXtoYinScopeOfTimeout(int X, int Y, int D, int timeout)
         {
-            var target = new CodeChallenges.FrogJmp.Solution();
+            var target = new FrogJmp();
             System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
             timer.Start();
             target.solution(X, Y, D);

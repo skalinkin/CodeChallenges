@@ -1,8 +1,8 @@
 ﻿using System.Numerics;
 
-namespace CodeChallenges.PermMissingElem
+namespace CodeChallenges.Codility
 {
-    public class Solution
+    public class PermMissingElem
     {
         public int solution(int[] A)
         {

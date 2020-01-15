@@ -1,4 +1,4 @@
-﻿using CodeChallenges.PermMissingElem;
+﻿using CodeChallenges.Codility;
 using NUnit.Framework;
 
 namespace CodeChallengesTests
@@ -9,7 +9,7 @@ namespace CodeChallengesTests
         [Test]
         public void AssertThatSolutionReturnsMissingElementFromArray()
         {
-            var target = new Solution();
+            var target = new PermMissingElem();
             var given = new[] {2, 3, 1, 5};
             var actual = target.solution(given);
             var expected = 4;

@@ -11,7 +11,7 @@ namespace CodeChallengesTests
         [TestCase(new[]{1000,-1000},2000)]
         public void AssertSolutionReturnsTheMinimalDifferenceThatCanBeAchieved(int[] given, int expected)
         {
-            var target = new CodeChallenges.TapeEquilibrium.Solution();
+            var target = new CodeChallenges.Codility.TapeEquilibrium();
             int actual = target.solution(given);
             Assert.AreEqual(expected,actual);
         }

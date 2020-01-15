@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace CodeChallenges.OddOccurrencesInArray
+namespace CodeChallenges.Codility
 {
-    public class Solution
+    public class OddOccurrencesInArray
     {
         public int solution(int[] A)
         {

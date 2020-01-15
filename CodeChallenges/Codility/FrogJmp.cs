@@ -1,6 +1,6 @@
-﻿namespace CodeChallenges.FrogJmp
+﻿namespace CodeChallenges.Codility
 {
-    public class Solution
+    public class FrogJmp
     {
         public int solution(int X, int Y, int D)
         {

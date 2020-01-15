@@ -44,14 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryGap\Solution.cs" />
-    <Compile Include="CyclicRotation\Solution.cs" />
-    <Compile Include="FrogJmp\Solution.cs" />
-    <Compile Include="OddOccurrencesInArray\Solution.cs" />
-    <Compile Include="PermMissingElem\Solution.cs" />
+    <Compile Include="Codility\BinaryGap.cs" />
+    <Compile Include="Codility\FrogRiverOne.cs" />
+    <Compile Include="Codility\CyclicRotation.cs" />
+    <Compile Include="Codility\FrogJmp.cs" />
+    <Compile Include="Codility\OddOccurrencesInArray.cs" />
+    <Compile Include="Codility\PermMissingElem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TapeEquilibrium\Solution.cs" />
+    <Compile Include="Codility\TapeEquilibrium.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

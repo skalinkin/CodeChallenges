@@ -1,4 +1,4 @@
-﻿using CodeChallenges.CyclicRotation;
+﻿using CodeChallenges.Codility;
 using NUnit.Framework;
 
 namespace CodeChallengesTests
@@ -14,7 +14,7 @@ namespace CodeChallengesTests
         [TestCase(new[] {1000}, 5, new[] {1000})]
         public void ArrayRotationTest(int[] given, int k, int[] expected)
         {
-            var target = new Solution();
+            var target = new CyclicRotation();
             var actual = target.solution(given, k);
 
             Assert.AreEqual(actual, expected);

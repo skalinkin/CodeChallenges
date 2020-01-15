@@ -1,4 +1,5 @@
 ﻿using System;
+using CodeChallenges.Codility;
 using NUnit.Framework;
 
 namespace CodeChallengesTests
@@ -21,7 +22,7 @@ namespace CodeChallengesTests
         [TestCase(1610612737, 28)]
         public void WhenPassIntegerReturnsTheLongestGap(int argument, int expected)
         {
-            var target = new CodeChallenges.BinaryGap.Solution();
+            var target = new BinaryGap();
 
             var actual = target.solution(argument);
 

@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using CodeChallenges.Codility;
+using NUnit.Framework;
 
 namespace CodeChallengesTests
 {
@@ -10,7 +11,7 @@ namespace CodeChallengesTests
         [TestCase(new [] {7}, 7)]
         public void AssertThatSolutionReturnsTheValueOfTheUnpairedElement(int[] given, int expected)
         {
-            var target = new CodeChallenges.OddOccurrencesInArray.Solution();
+            var target = new OddOccurrencesInArray();
             var actual = target.solution(given);
             Assert.AreEqual(expected, actual);
         }

@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Linq;
 
-namespace CodeChallenges.BinaryGap
+namespace CodeChallenges.Codility
 {
-    public class Solution
+    public class BinaryGap
     {
         public int solution(int N)
         {
