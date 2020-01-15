@@ -48,6 +48,7 @@
     <Compile Include="Codility\FrogRiverOne.cs" />
     <Compile Include="Codility\CyclicRotation.cs" />
     <Compile Include="Codility\FrogJmp.cs" />
+    <Compile Include="Codility\MissingInteger.cs" />
     <Compile Include="Codility\OddOccurrencesInArray.cs" />
     <Compile Include="Codility\PermCheck.cs" />
     <Compile Include="Codility\PermMissingElem.cs" />
