@@ -1,39 +1,35 @@
-﻿using System;
-
-namespace CodeChallenges.Codility
+﻿namespace CodeChallenges.Codility
 {
     public class FrogRiverOne
     {
         public int solution(int X, int[] A)
         {
-            var positions = new bool [X+1];
-            var frogPosition = 0;
-            positions[frogPosition] = true;
-
+            var positions = new bool [X + 1];
+            positions[0] = true;
             for (var i = 0; i < A.Length; i++)
             {
                 positions[A[i]] = true;
-                if (frogCanJump(positions))
+
+                if (i >= X - 1)
                 {
-                    return i;
+                    var canJamp = true;
+                    foreach (var t in positions)
+                    {
+                        if (!t)
+                        {
+                            canJamp = false;
+                            break;
+                        }
+                    }
+
+                    if (canJamp)
+                    {
+                        return i;
+                    }
                 }
             }
 
             return -1;
-        }
-
-        private bool frogCanJump(bool[] positions)
-        {
-            var canit = true;
-            foreach (var position in positions)
-            {
-                if (!position)
-                {
-                    canit = false;
-                    break;
-                }
-            }
-            return canit;
         }
     }
 }
