@@ -5,25 +5,38 @@
         public int[] solution(int N, int[] A)
         {
             var counters = new int[N];
-            var maxCounter = 0;
+            var currentMax = 0;
+            var lastIncrese = 0;
             var cieling = N + 1;
+
             foreach (var element in A)
             {
                 if (element == cieling)
                 {
-                    for (var i = 0; i < counters.Length; i++)
-                    {
-                        counters[i] = maxCounter;
-                    }
+                    lastIncrese = currentMax;
                 }
                 else
                 {
                     var numberPosition = element - 1;
-                    counters[numberPosition]++;
-                    if (maxCounter < counters[numberPosition])
+                    if (counters[numberPosition] <= lastIncrese)
                     {
-                        maxCounter = counters[numberPosition];
+                        counters[numberPosition] = lastIncrese;
                     }
+
+                    counters[numberPosition]++;
+
+                    if (counters[numberPosition] > currentMax)
+                    {
+                        currentMax = counters[numberPosition];
+                    }
+                }
+            }
+
+            for (var i = 0; i < counters.Length; i++)
+            {
+                if (counters[i] < lastIncrese)
+                {
+                    counters[i] = lastIncrese;
                 }
             }
 
