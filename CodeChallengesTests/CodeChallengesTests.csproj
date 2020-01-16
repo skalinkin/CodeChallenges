@@ -51,6 +51,7 @@
     <Compile Include="CyclicRotationSolutionTest.cs" />
     <Compile Include="FrogJmpSolutionTest.cs" />
     <Compile Include="FrogRiverOneSolutionTest.cs" />
+    <Compile Include="MaxCountersSolutionTest.cs" />
     <Compile Include="MissingIntegerSolutionTest.cs" />
     <Compile Include="OddOccurrencesInArrayTest.cs" />
     <Compile Include="PermCheckSolutionTest.cs" />
