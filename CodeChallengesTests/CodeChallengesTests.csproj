@@ -54,6 +54,7 @@
     <Compile Include="MaxCountersSolutionTest.cs" />
     <Compile Include="MissingIntegerSolutionTest.cs" />
     <Compile Include="OddOccurrencesInArrayTest.cs" />
+    <Compile Include="PassingCarsSolutionTest.cs" />
     <Compile Include="PermCheckSolutionTest.cs" />
     <Compile Include="PermMissingElemSolutionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
