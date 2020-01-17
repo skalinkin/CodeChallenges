@@ -1,67 +1,103 @@
-﻿namespace CodeChallenges.Codility
+﻿using System;
+
+namespace CodeChallenges.Codility
 {
     public class GenomicRangeQuery
     {
+        private readonly int A = 0;
+        private readonly int C = 1;
+        private readonly int G = 2;
+        private readonly int T = 3;
+
         public int[] solution(string S, int[] P, int[] Q)
         {
-            var answers = new int [P.Length];
-            var A = new int[S.Length];
-            var C = new int[S.Length];
-            var G = new int[S.Length];
-            var T = new int[S.Length];
+            var answers = new int[P.Length];
 
-            for (var i = 0; i < S.Length; i++)
+            var lastSeen = new int[4, S.Length + 1];
+
+            for (var nucleotidesPosition = 0; nucleotidesPosition < S.Length; nucleotidesPosition++)
             {
-                var nucleotid = S[i];
-                WriteLastSeenNucleotid(A, nucleotid, i, 'A');
-                WriteLastSeenNucleotid(C, nucleotid, i, 'C');
-                WriteLastSeenNucleotid(G, nucleotid, i, 'G');
-                WriteLastSeenNucleotid(T, nucleotid, i, 'T');
+                var nucleotide = S[nucleotidesPosition];
+
+                CopyLastSeenPositionsFrompreviousStep(lastSeen, nucleotidesPosition);
+
+                var index = GetIndexFromNucleotide(nucleotide);
+
+                lastSeen[index, nucleotidesPosition + 1] = nucleotidesPosition + 1;
             }
 
-            for (var i = 0; i < P.Length; i++)
+            for (var query = 0; query < P.Length; query++)
             {
-                if (CheckLastSeen(P, Q, A, i, answers, 1))
+                var startPositionInLastSeen = P[query] + 1;
+                var endPositionInLastSeen = Q[query] + 1;
+                if (P[query] == Q[query])
                 {
-                }
-                else if (CheckLastSeen(P, Q, C, i, answers, 2))
-                {
-                }
-                else if (CheckLastSeen(P, Q, G, i, answers, 3))
-                {
+                    if (lastSeen[A, startPositionInLastSeen] != lastSeen[A, startPositionInLastSeen - 1])
+                    {
+                        answers[query] = 1;
+                    }
+                    else if (lastSeen[C, startPositionInLastSeen] != lastSeen[C, startPositionInLastSeen - 1])
+                    {
+                        answers[query] = 2;
+                    }
+                    else if (lastSeen[G, startPositionInLastSeen] != lastSeen[G, startPositionInLastSeen - 1])
+                    {
+                        answers[query] = 3;
+                    }
+                    else
+                    {
+                        answers[query] = 4;
+                    }
                 }
                 else
                 {
-                    CheckLastSeen(P, Q, T, i, answers, 4);
+                    if (lastSeen[A, endPositionInLastSeen] >= startPositionInLastSeen)
+                    {
+                        answers[query] = 1;
+                    }
+                    else if (lastSeen[C, endPositionInLastSeen] >= startPositionInLastSeen)
+                    {
+                        answers[query] = 2;
+                    }
+                    else if (lastSeen[G, endPositionInLastSeen] >= startPositionInLastSeen)
+                    {
+                        answers[query] = 3;
+                    }
+                    else
+                    {
+                        answers[query] = 4;
+                    }
                 }
             }
+
 
             return answers;
         }
 
-        private static bool CheckLastSeen(int[] P, int[] Q, int[] lastSeen, int i, int[] answers, int factor)
+        private void CopyLastSeenPositionsFrompreviousStep(int[,] lastSeen, int nucleotidesPosition)
         {
-            if (lastSeen[Q[i] + 1] >= P[i])
+            if (nucleotidesPosition == 0)
             {
-                answers[i] = factor;
-                return true;
+                return;
             }
 
-            return false;
+            for (var i = 0; i < 4; i++)
+            {
+                var previousLastSeen = lastSeen[i, nucleotidesPosition];
+                lastSeen[i, nucleotidesPosition + 1] = previousLastSeen;
+            }
         }
 
-        private void WriteLastSeenNucleotid(int[] lastSeen, char nucleotid, int i1, char dna)
+        private int GetIndexFromNucleotide(char nucleotide)
         {
-            if (nucleotid == dna)
+            switch (nucleotide)
             {
-                lastSeen[i1] = i1;
-            }
-            else
-            {
-                if (i1 != 0)
-                {
-                    lastSeen[i1] = lastSeen[i1 - 1];
-                }
+                case 'A': return A;
+                case 'C': return C;
+                case 'G': return G;
+                case 'T': return T;
+                default:
+                    throw new InvalidOperationException("Bad thing happened");
             }
         }
     }
