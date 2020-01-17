@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryGapSolutionTest.cs" />
+    <Compile Include="CountDivSolutionTest.cs" />
     <Compile Include="CyclicRotationSolutionTest.cs" />
     <Compile Include="FrogJmpSolutionTest.cs" />
     <Compile Include="FrogRiverOneSolutionTest.cs" />
