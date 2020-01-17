@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Codility\BinaryGap.cs" />
     <Compile Include="Codility\CountDiv.cs" />
+    <Compile Include="Codility\Distinct.cs" />
     <Compile Include="Codility\FrogRiverOne.cs" />
     <Compile Include="Codility\CyclicRotation.cs" />
     <Compile Include="Codility\FrogJmp.cs" />

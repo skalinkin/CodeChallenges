@@ -50,6 +50,7 @@
     <Compile Include="BinaryGapSolutionTest.cs" />
     <Compile Include="CountDivSolutionTest.cs" />
     <Compile Include="CyclicRotationSolutionTest.cs" />
+    <Compile Include="DistinctSolutionTest.cs" />
     <Compile Include="FrogJmpSolutionTest.cs" />
     <Compile Include="FrogRiverOneSolutionTest.cs" />
     <Compile Include="GenomicRangeQuerySolutionTest.cs" />
