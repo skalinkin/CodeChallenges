@@ -53,6 +53,7 @@
     <Compile Include="FrogRiverOneSolutionTest.cs" />
     <Compile Include="GenomicRangeQuerySolutionTest.cs" />
     <Compile Include="MaxCountersSolutionTest.cs" />
+    <Compile Include="MinAvgTwoSliceSolutionTest.cs" />
     <Compile Include="MissingIntegerSolutionTest.cs" />
     <Compile Include="OddOccurrencesInArrayTest.cs" />
     <Compile Include="PassingCarsSolutionTest.cs" />
