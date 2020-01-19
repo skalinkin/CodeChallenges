@@ -55,6 +55,7 @@
     <Compile Include="Codility\MaxProductOfThree.cs" />
     <Compile Include="Codility\MinAvgTwoSlice.cs" />
     <Compile Include="Codility\MissingInteger.cs" />
+    <Compile Include="Codility\Nesting.cs" />
     <Compile Include="Codility\NumberOfDiscIntersections.cs" />
     <Compile Include="Codility\OddOccurrencesInArray.cs" />
     <Compile Include="Codility\PassingCars.cs" />

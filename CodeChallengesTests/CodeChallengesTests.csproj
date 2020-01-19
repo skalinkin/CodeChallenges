@@ -58,6 +58,7 @@
     <Compile Include="MaxProductOfThreeSolutionTest.cs" />
     <Compile Include="MinAvgTwoSliceSolutionTest.cs" />
     <Compile Include="MissingIntegerSolutionTest.cs" />
+    <Compile Include="NestingSolutionTest.cs" />
     <Compile Include="NumberOfDiscIntersectionsSolutionTest.cs" />
     <Compile Include="OddOccurrencesInArrayTest.cs" />
     <Compile Include="PassingCarsSolutionTest.cs" />
