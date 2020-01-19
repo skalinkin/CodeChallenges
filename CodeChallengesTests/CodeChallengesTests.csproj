@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTwoNumbersSolutionTest.cs" />
     <Compile Include="BinaryGapSolutionTest.cs" />
     <Compile Include="BracketsSolutionTest.cs" />
     <Compile Include="CountDivSolutionTest.cs" />
