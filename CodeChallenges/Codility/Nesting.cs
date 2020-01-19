@@ -6,11 +6,10 @@ namespace CodeChallenges.Codility
     {
         public int solution(string S)
         {
-            var pairDefinition = new Pair {Opener = '(', Closer = ')'};
             var stack = new Stack<char>();
             foreach (var s in S)
             {
-                if (s == pairDefinition.Opener)
+                if (s == '(')
                 {
                     stack.Push(s);
                 }
@@ -22,7 +21,7 @@ namespace CodeChallenges.Codility
                     }
 
                     var last = stack.Pop();
-                    if (last != pairDefinition.Opener)
+                    if (last !='(')
                     {
                         return 0;
                     }
@@ -35,12 +34,6 @@ namespace CodeChallenges.Codility
             }
 
             return 0;
-        }
-
-        private class Pair
-        {
-            public char Closer;
-            public char Opener;
         }
     }
 }
