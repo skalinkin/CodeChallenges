@@ -54,6 +54,7 @@
     <Compile Include="Codility\CyclicRotation.cs" />
     <Compile Include="Codility\FrogJmp.cs" />
     <Compile Include="Codility\GenomicRangeQuery.cs" />
+    <Compile Include="Codility\Leader.cs" />
     <Compile Include="Codility\MaxCounters.cs" />
     <Compile Include="Codility\MaxProductOfThree.cs" />
     <Compile Include="Codility\MinAvgTwoSlice.cs" />
