@@ -62,6 +62,7 @@
     <Compile Include="Codility\PassingCars.cs" />
     <Compile Include="Codility\PermCheck.cs" />
     <Compile Include="Codility\PermMissingElem.cs" />
+    <Compile Include="Codility\StoneWall.cs" />
     <Compile Include="Codility\Triangle.cs" />
     <Compile Include="LeetCode\AddTwoNumbersSolution.cs" />
     <Compile Include="Program.cs" />

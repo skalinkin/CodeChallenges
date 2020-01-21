@@ -67,6 +67,7 @@
     <Compile Include="PermCheckSolutionTest.cs" />
     <Compile Include="PermMissingElemSolutionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoneWallSolutionTest.cs" />
     <Compile Include="TapeEquilibriumSolutionTest.cs" />
     <Compile Include="TriangleSolutionTest.cs" />
   </ItemGroup>
