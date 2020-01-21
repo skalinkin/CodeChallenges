@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 
 namespace CodeChallenges.Codility
 {
@@ -8,41 +6,60 @@ namespace CodeChallenges.Codility
     {
         public int solution(int[] A)
         {
-            var counts = new Dictionary<int, int>();
+            var stack = new Stack<int>();
 
-            foreach (var i in A)
+            foreach (var number in A)
             {
-                if (!counts.ContainsKey(i))
+                if (stack.Count == 0)
                 {
-                    counts.Add(i, 1);
+                    stack.Push(number);
                 }
                 else
                 {
-                    counts[i]++;
-                }
-            }
-
-            if (counts.Count != 0)
-            {
-                var maxCount = counts.First().Value;
-                var leadNumber = counts.First().Key;
-
-                foreach (var count in counts)
-                {
-                    if (maxCount < count.Value)
+                    if (stack.Peek() == number)
                     {
-                        maxCount = count.Value;
-                        leadNumber = count.Key;
+                        stack.Push(number);
+                    }
+                    else
+                    {
+                        stack.Pop();
                     }
                 }
+            }
 
-                if (maxCount > A.Length / 2)
+            if (stack.Count == 0)
+            {
+                return -1;
+            }
+
+            var candidate = stack.Peek();
+            var count = 0;
+
+            foreach (var number in A)
+            {
+                if (number == candidate)
                 {
-                    return Array.IndexOf(A, leadNumber);
+                    count++;
                 }
             }
 
-            return -1;
+            if (count <= A.Length / 2)
+            {
+                return -1;
+            }
+
+            var index = 0;
+            for (var i = 0; i < A.Length; i++)
+            {
+                var number = A[i];
+                if (number == candidate)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            return index;
         }
     }
 }
