@@ -45,18 +45,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codility\BinaryGap.cs" />
+    <Compile Include="Codility\Brackets.cs" />
     <Compile Include="Codility\CountDiv.cs" />
     <Compile Include="Codility\Distinct.cs" />
+    <Compile Include="Codility\Fish.cs" />
     <Compile Include="Codility\FrogRiverOne.cs" />
     <Compile Include="Codility\CyclicRotation.cs" />
     <Compile Include="Codility\FrogJmp.cs" />
     <Compile Include="Codility\GenomicRangeQuery.cs" />
     <Compile Include="Codility\MaxCounters.cs" />
+    <Compile Include="Codility\MaxProductOfThree.cs" />
+    <Compile Include="Codility\MinAvgTwoSlice.cs" />
     <Compile Include="Codility\MissingInteger.cs" />
+    <Compile Include="Codility\Nesting.cs" />
+    <Compile Include="Codility\NumberOfDiscIntersections.cs" />
     <Compile Include="Codility\OddOccurrencesInArray.cs" />
     <Compile Include="Codility\PassingCars.cs" />
     <Compile Include="Codility\PermCheck.cs" />
     <Compile Include="Codility\PermMissingElem.cs" />
+    <Compile Include="Codility\StoneWall.cs" />
+    <Compile Include="Codility\Triangle.cs" />
+    <Compile Include="LeetCode\AddTwoNumbersSolution.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Codility\TapeEquilibrium.cs" />
