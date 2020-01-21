@@ -52,6 +52,7 @@
     <Compile Include="BracketsSolutionTest.cs" />
     <Compile Include="CountDivSolutionTest.cs" />
     <Compile Include="CyclicRotationSolutionTest.cs" />
+    <Compile Include="DominatorSolutionTest.cs" />
     <Compile Include="FishSolutionTest.cs" />
     <Compile Include="DistinctSolutionTest.cs" />
     <Compile Include="FrogJmpSolutionTest.cs" />

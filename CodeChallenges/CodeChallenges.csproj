@@ -48,6 +48,7 @@
     <Compile Include="Codility\Brackets.cs" />
     <Compile Include="Codility\CountDiv.cs" />
     <Compile Include="Codility\Distinct.cs" />
+    <Compile Include="Codility\Dominator.cs" />
     <Compile Include="Codility\Fish.cs" />
     <Compile Include="Codility\FrogRiverOne.cs" />
     <Compile Include="Codility\CyclicRotation.cs" />
