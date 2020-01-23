@@ -1,7 +1,7 @@
 ﻿using CodeChallenges.LeetCode;
 using NUnit.Framework;
 
-namespace CodeChallengesTests
+namespace CodeChallengesTests.LeetCode
 {
     [TestFixture]
     public class AddTwoNumbersSolutionTest

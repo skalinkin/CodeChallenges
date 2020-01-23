@@ -9,7 +9,7 @@ namespace CodeChallenges.Codility
         {
             var sequence = Convert.ToString(N, 2);
             sequence = sequence.Trim('0');
-            var gaps = sequence.Split(new []{'1'},StringSplitOptions.RemoveEmptyEntries);
+            var gaps = sequence.Split(new[] {'1'}, StringSplitOptions.RemoveEmptyEntries);
             if (gaps.Length == 0)
             {
                 return 0;

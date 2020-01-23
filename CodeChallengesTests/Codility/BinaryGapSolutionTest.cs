@@ -1,8 +1,7 @@
-﻿using System;
-using CodeChallenges.Codility;
+﻿using CodeChallenges.Codility;
 using NUnit.Framework;
 
-namespace CodeChallengesTests
+namespace CodeChallengesTests.Codility
 {
     [TestFixture]
     internal class BinaryGapSolutionTest

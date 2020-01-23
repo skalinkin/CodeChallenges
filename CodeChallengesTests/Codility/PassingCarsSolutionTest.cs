@@ -1,7 +1,7 @@
 ﻿using CodeChallenges.Codility;
 using NUnit.Framework;
 
-namespace CodeChallengesTests
+namespace CodeChallengesTests.Codility
 {
     [TestFixture]
     public class PassingCarsSolutionTest

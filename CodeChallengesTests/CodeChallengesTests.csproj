@@ -47,33 +47,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddTwoNumbersSolutionTest.cs" />
-    <Compile Include="BinaryGapSolutionTest.cs" />
-    <Compile Include="BracketsSolutionTest.cs" />
-    <Compile Include="CountDivSolutionTest.cs" />
-    <Compile Include="CyclicRotationSolutionTest.cs" />
-    <Compile Include="DominatorSolutionTest.cs" />
-    <Compile Include="FishSolutionTest.cs" />
-    <Compile Include="DistinctSolutionTest.cs" />
-    <Compile Include="FrogJmpSolutionTest.cs" />
-    <Compile Include="FrogRiverOneSolutionTest.cs" />
-    <Compile Include="GenomicRangeQuerySolutionTest.cs" />
-    <Compile Include="MaxCountersSolutionTest.cs" />
-    <Compile Include="MaxProductOfThreeSolutionTest.cs" />
-    <Compile Include="MaxProfitSolutionTest.cs" />
-    <Compile Include="MaxSliceSumSolutionTest.cs" />
-    <Compile Include="MinAvgTwoSliceSolutionTest.cs" />
-    <Compile Include="MissingIntegerSolutionTest.cs" />
-    <Compile Include="NestingSolutionTest.cs" />
-    <Compile Include="NumberOfDiscIntersectionsSolutionTest.cs" />
-    <Compile Include="OddOccurrencesInArrayTest.cs" />
-    <Compile Include="PassingCarsSolutionTest.cs" />
-    <Compile Include="PermCheckSolutionTest.cs" />
-    <Compile Include="PermMissingElemSolutionTest.cs" />
+    <Compile Include="LeetCode\AddTwoNumbersSolutionTest.cs" />
+    <Compile Include="Codility\BinaryGapSolutionTest.cs" />
+    <Compile Include="Codility\BracketsSolutionTest.cs" />
+    <Compile Include="Codility\CountDivSolutionTest.cs" />
+    <Compile Include="Codility\CyclicRotationSolutionTest.cs" />
+    <Compile Include="Codility\DominatorSolutionTest.cs" />
+    <Compile Include="Codility\FishSolutionTest.cs" />
+    <Compile Include="Codility\DistinctSolutionTest.cs" />
+    <Compile Include="Codility\FrogJmpSolutionTest.cs" />
+    <Compile Include="Codility\FrogRiverOneSolutionTest.cs" />
+    <Compile Include="Codility\GenomicRangeQuerySolutionTest.cs" />
+    <Compile Include="Codility\MaxCountersSolutionTest.cs" />
+    <Compile Include="Codility\MaxProductOfThreeSolutionTest.cs" />
+    <Compile Include="Codility\MaxProfitSolutionTest.cs" />
+    <Compile Include="Codility\MaxSliceSumSolutionTest.cs" />
+    <Compile Include="Codility\MinAvgTwoSliceSolutionTest.cs" />
+    <Compile Include="Codility\MissingIntegerSolutionTest.cs" />
+    <Compile Include="Codility\NestingSolutionTest.cs" />
+    <Compile Include="Codility\NumberOfDiscIntersectionsSolutionTest.cs" />
+    <Compile Include="Codility\OddOccurrencesInArrayTest.cs" />
+    <Compile Include="Codility\PassingCarsSolutionTest.cs" />
+    <Compile Include="Codility\PermCheckSolutionTest.cs" />
+    <Compile Include="Codility\PermMissingElemSolutionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StoneWallSolutionTest.cs" />
-    <Compile Include="TapeEquilibriumSolutionTest.cs" />
-    <Compile Include="TriangleSolutionTest.cs" />
+    <Compile Include="Codility\StoneWallSolutionTest.cs" />
+    <Compile Include="Codility\TapeEquilibriumSolutionTest.cs" />
+    <Compile Include="Codility\TriangleSolutionTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -84,6 +84,7 @@
       <Name>CodeChallenges</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

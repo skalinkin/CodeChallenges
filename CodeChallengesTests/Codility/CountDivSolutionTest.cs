@@ -1,7 +1,7 @@
-﻿using CodeChallenges.Codility;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using CodeChallenges.Codility;
 
-namespace CodeChallengesTests
+namespace CodeChallengesTests.Codility
 {
     [TestFixture]
     public class CountDivSolutionTest
