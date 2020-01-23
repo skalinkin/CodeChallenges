@@ -61,6 +61,7 @@
     <Compile Include="MaxCountersSolutionTest.cs" />
     <Compile Include="MaxProductOfThreeSolutionTest.cs" />
     <Compile Include="MaxProfitSolutionTest.cs" />
+    <Compile Include="MaxSliceSumSolutionTest.cs" />
     <Compile Include="MinAvgTwoSliceSolutionTest.cs" />
     <Compile Include="MissingIntegerSolutionTest.cs" />
     <Compile Include="NestingSolutionTest.cs" />

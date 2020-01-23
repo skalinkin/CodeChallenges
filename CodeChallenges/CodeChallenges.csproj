@@ -58,6 +58,7 @@
     <Compile Include="Codility\MaxCounters.cs" />
     <Compile Include="Codility\MaxProductOfThree.cs" />
     <Compile Include="Codility\MaxProfit.cs" />
+    <Compile Include="Codility\MaxSliceSum.cs" />
     <Compile Include="Codility\MinAvgTwoSlice.cs" />
     <Compile Include="Codility\MissingInteger.cs" />
     <Compile Include="Codility\Nesting.cs" />
