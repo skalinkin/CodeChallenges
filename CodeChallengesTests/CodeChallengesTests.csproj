@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Codility\MaxDoubleSliceSumSolutionTest.cs" />
     <Compile Include="LeetCode\AddTwoNumbersSolutionTest.cs" />
     <Compile Include="Codility\BinaryGapSolutionTest.cs" />
     <Compile Include="Codility\BracketsSolutionTest.cs" />

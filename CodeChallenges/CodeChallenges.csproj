@@ -56,6 +56,7 @@
     <Compile Include="Codility\GenomicRangeQuery.cs" />
     <Compile Include="Codility\Leader.cs" />
     <Compile Include="Codility\MaxCounters.cs" />
+    <Compile Include="Codility\MaxDoubleSliceSum.cs" />
     <Compile Include="Codility\MaxProductOfThree.cs" />
     <Compile Include="Codility\MaxProfit.cs" />
     <Compile Include="Codility\MaxSliceSum.cs" />
