@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Xml.Schema;
+﻿using System;
 
 namespace CodeChallenges.Codility
 {
@@ -8,18 +7,27 @@ namespace CodeChallenges.Codility
         public int solution(int[] A)
         {
             var N = A.Length;
-            var queue = new Queue<int>(N);
+            var sliceOne = new int[N];
+            var sliceTwo = new int[N];
 
-            var curentSlice = A[0];
-            for (int i = 1; i < N -1 ; i++)
+            for (var i = 1; i < N - 1; i++)
             {
-                if (A[i] > A[i + 1])
-                {
-                    queue.Enqueue(curentSlice);
-                }
+                sliceOne[i] = Math.Max(sliceOne[i - 1] + A[i], 0);
             }
 
-            return 0;
+            for (int i = N - 2; i > 0; i--)
+            {
+                sliceTwo[i] = Math.Max(sliceTwo[i + 1] + A[i], 0);
+            }
+
+            var maxDoubleSliceSum = 0;
+
+            for (var i = 1; i < N - 1; i++)
+            {
+                maxDoubleSliceSum = Math.Max(maxDoubleSliceSum, sliceOne[i - 1] + sliceTwo[i + 1]);
+            }
+
+            return maxDoubleSliceSum;
         }
     }
 }
