@@ -69,6 +69,7 @@
     <Compile Include="Codility\NumberOfDiscIntersections.cs" />
     <Compile Include="Codility\OddOccurrencesInArray.cs" />
     <Compile Include="Codility\PassingCars.cs" />
+    <Compile Include="Codility\Peaks.cs" />
     <Compile Include="Codility\PermCheck.cs" />
     <Compile Include="Codility\PermMissingElem.cs" />
     <Compile Include="Codility\StoneWall.cs" />
