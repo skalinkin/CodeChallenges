@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Codility\CountFactorsSolutionTest.cs" />
+    <Compile Include="Codility\CountNonDivisibleSolutionTest.cs" />
     <Compile Include="Codility\FlagsSolutionTest.cs" />
     <Compile Include="Codility\MaxDoubleSliceSumSolutionTest.cs" />
     <Compile Include="Codility\MinPerimeterRectangleSolutionTest.cs" />
