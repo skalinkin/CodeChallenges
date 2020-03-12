@@ -76,6 +76,7 @@
     <Compile Include="Codility\PassingCarsSolutionTest.cs" />
     <Compile Include="Codility\PermCheckSolutionTest.cs" />
     <Compile Include="Codility\PermMissingElemSolutionTest.cs" />
+    <Compile Include="LeetCode\ReverseIntegerSolutionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Codility\StoneWallSolutionTest.cs" />
     <Compile Include="Codility\TapeEquilibriumSolutionTest.cs" />

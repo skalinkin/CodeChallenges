@@ -76,6 +76,7 @@
     <Compile Include="Codility\StoneWall.cs" />
     <Compile Include="Codility\Triangle.cs" />
     <Compile Include="LeetCode\AddTwoNumbersSolution.cs" />
+    <Compile Include="LeetCode\ReverseInteger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Codility\TapeEquilibrium.cs" />
